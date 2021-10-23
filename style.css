@@ -1,0 +1,176 @@
+@font-face {font-family: 'VCR OSD MONO';
+            src: url('fonts/VCR OSD MONO.ttf') format('truetype'),
+            url('https://github.com/Natalius-dev/vigilant-engine/raw/main/VCROSDMono.woff') format('woff');
+}
+
+/* dosis-700 - latin */
+@font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Dosis/dosis-v19-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/Dosis/dosis-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Dosis/dosis-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Dosis/dosis-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Dosis/dosis-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Dosis/dosis-v19-latin-700.svg#Dosis') format('svg'); /* Legacy iOS */
+}
+
+p {
+    font-family: 'Dosis';
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+}
+input {
+    font-family: 'Dosis';
+}
+
+button {
+    font-family: 'Dosis';
+    background-color: antiquewhite;
+    padding: 5px;
+    display: inline;
+    border-color: rgb(167, 144, 14);
+    box-shadow: 0px 5px 0px rgb(148, 128, 17);
+    outline: none;
+    cursor: default;
+    transition: 0.25s;
+}
+button:hover {
+    background-color: rgb(241, 224, 202);
+    border-color: rgb(167, 144, 14);
+    box-shadow: 0px 5px 0px rgb(148, 128, 17);
+    border-radius: 0px;
+    cursor: pointer;
+    outline: none;
+}
+button:active {
+    background-color: rgb(241, 221, 195);
+    border-color: rgb(167, 144, 14);
+    box-shadow: 0px 1px 0px rgb(148, 128, 17);
+    transform: translateY(4px);
+    cursor: pointer;
+    outline: none;
+}
+
+label {
+    font-family: 'Dosis';
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-family: 'VCR OSD MONO';
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h2 {
+    font-family: 'VCR OSD MONO';
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+    background-color: antiquewhite;
+}
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Dosis';
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: rgb(241, 224, 202);
+}
+
+td{
+    text-align: center;
+}
+td p {
+    margin-top:8px;
+    font-size: 1.5em;
+}
+td button {
+    margin-top: 8px;
+}
+
+@media (min-width: 64em) {
+	.row {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row-reverse;
+	}
+	.col { flex-grow: 1; }
+}
+
+.grid {
+	border-collapse: collapse;
+    max-width:fit-content;
+}
+.col {
+	border: 6px double rgb(167, 144, 14);
+    background-color: antiquewhite;
+	padding: 1em;
+}
+.col img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.col p {
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.ignore {
+	background:none;
+	border:none;
+	bottom:auto;
+	clear:none;
+	cursor:default;
+	/* didn't really know what the default for display should be*/
+	/*display:inline;*/
+	float:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	font-style:normal;
+	font-weight:normal;
+	height:auto;
+	left:auto;
+	letter-spacing:normal;
+	line-height:normal;
+	max-height:none;
+	max-width:none;
+	min-height:0;
+	min-width:0;
+	overflow:visible;
+	position:static;
+	right:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	top:auto;
+	visibility:visible;
+	white-space:normal;
+	width:auto;
+	z-index:auto;
+}
